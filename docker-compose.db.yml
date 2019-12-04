@@ -3,7 +3,7 @@ version: '3'
 networks:
   default:
     external:
-      name: heavenDB, nginxNet
+      name: heavenDB
 services:
   heavenDB:
     image: mysql:5.7
