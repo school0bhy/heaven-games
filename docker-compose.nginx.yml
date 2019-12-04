@@ -3,9 +3,13 @@ version: '3'
 networks:
   default:
     external:
-      name: nginxNet
+      name: heavenDB
 services:
   nginx:
     image: nginx
     ports:
       - "80:80"
+    volumes:
+      - ./scripts/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - heavenApp
