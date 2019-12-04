@@ -3,9 +3,9 @@ version: '3'
 networks:
   default:
     external:
-      name: heavenDB
+      name: heavenDB, nginxNet
 services:
-  mydb:
+  heavenDB:
     image: mysql:5.7
     volumes:
       - /home/ubuntu/sql/:/docker-entrypoint-initdb.d

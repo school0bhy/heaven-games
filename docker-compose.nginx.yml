@@ -1,0 +1,11 @@
+version: '3'
+
+networks:
+  default:
+    external:
+      name: nginxNet
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
