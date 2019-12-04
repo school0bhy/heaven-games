@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOCKER_APP_NAME=heavenApp
-DOCKER_DB_NAME=heavenDB
+DOCKER_DB_NAME=mydb
 DOCKER_NGINX_NAME=heavenNginx
 
 EXIST_BLUE=$(docker-compose -p ${DOCKER_APP_NAME}-blue -f docker-compose.blue.yml ps | grep Up)
