@@ -3,9 +3,9 @@ version: '3'
 networks:
   default:
     external:
-      name: heavenDB
+      name: mydb
 services:
-  heavenDB:
+  mydb:
     image: mysql:5.7
     volumes:
       - /home/ubuntu/sql/:/docker-entrypoint-initdb.d
